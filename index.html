@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Blog Steephan</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>Tentang Steephan</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Blog Steephan</h1>
-        <p class="subtitle">Oleh: {{ author }}</p>
-        <hr>
-        {% for post in posts %}
-            <div class="post">
-                <h2>{{ post.title }}</h2>
-                <p class="date">{{ post.date }}</p>
-                <p>{{ post.content }}</p>
-            </div>
-            <hr>
-        {% endfor %}
-    </div>
+  <div class="container">
+    <h1>Tentang Saya</h1>
+    <p>Halo! Saya <strong>Steephan Riscy Pardingotan Turnip</strong>, mahasiswa S1 Sistem Informasi di Institut Teknologi PLN.</p>
+    <p>Saya tertarik dengan teknologi, pengembangan web, dan suka mencoba hal baru.</p>
+    <p>Blog ini saya buat sebagai tempat berbagi pemikiran, cerita, dan pengalaman saya dalam belajar dan berkarya di dunia digital.</p>
+    <a href="/">← Kembali ke Beranda</a>
+  </div>
 </body>
 </html>
