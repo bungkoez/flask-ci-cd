@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Steephan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Steephan</h1>
+        <p class="subtitle">Oleh: {{ author }}</p>
+        <hr>
+        {% for post in posts %}
+            <div class="post">
+                <h2>{{ post.title }}</h2>
+                <p class="date">{{ post.date }}</p>
+                <p>{{ post.content }}</p>
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>
